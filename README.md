@@ -16,7 +16,7 @@
 
 ## Example
  A session of 5 seconds has 5 segments. The segment video quality values are [1,2,3,4,5]. 
- And the segment audio quality values are [5,4,3,2,1]. 
+ And the segment audio quality values are [5,5,5,5,5]. 
  In addition, there are two stalling events as follows. 
 1. Initial delay:    
 	Starting time: 0s 		      Length: 5s
@@ -25,7 +25,7 @@
 
 To obtain the output, you can use the following command. 
   ```
-	[O46,O35,O34,O23] = ITUT_P1203_function([1 2 3 4 5],[5 4 3 2 1],[[0 5];[2 3]])
+	[O46,O35,O34,O23] = ITUT_P1203_function([1 2 3 4 5],[5 5 5 5 5],[[0 5];[2 3]])
   ```
 
 ## Authors
@@ -64,6 +64,18 @@ If you use this source code in your research, you must cite:
         doi = {10.1145/3204949.3208124},
         isbn = {9781450351928},
         title = {{HTTP Adaptive Streaming QoE Estimation with ITU-T Rec. P.1203 – Open Databases and Software}},
+        year = {2018}
+        }
+
+
+    Huyen T. T. Tran, Nam Pham Ngoc, Tobias Hoßfeld, and Truong Cong Thang. A Cumulative Quality Model for HTTP Adaptive Streaming. In 10th International Conference on Quality of Multimedia Experience (QoMEX 2018), Sardinia, Italy, May, 2018.
+
+        @inproceedings{Tran2018,
+        author = {Huyen T. T. Tran, Nam Pham Ngoc, Tobias Hoßfeld, and Truong Cong Thang},
+        booktitle = {10th International Conference on Quality of Multimedia Experience (QoMEX 2018)},
+        title = {{A Cumulative Quality Model for HTTP Adaptive Streaming}},
+        address = {Sardinia, Italy},
+        month = {May},
         year = {2018}
         }
 
