@@ -1,4 +1,5 @@
-%[O46,O35, O34,O23] = ITUT_P1203_function([1 2 3 4 5],[1 2 3 4 5],[[0 1];[ 1 3]],2)
+%% Example
+%[O46,O35,O34,O23] = ITUT_P1203_function([1 2 3 4 5],[5 5 5 5 5],[[0 5];[2 3]])
 %I23 = [startTime stallLen]
 %I23 include initial delay
 function [O46,O35, O34,O23] = ITUT_P1203_function(O21,O22,I23)
@@ -20,6 +21,11 @@ function [O46,O35, O34,O23] = ITUT_P1203_function(O21,O22,I23)
     end
     [O21,O22] = F_preprocess(O21,O22);
     [qDirChangesTot,qDirChangesLongest] = F_Cal_qDirChanges(O22); % 8.1.2.4 and 8.1.2.5
-    [O34, O35] = F_Cal_O34O35(O21,O22,qDirChangesTot,qDirChangesLongest); % 8.2 and 8.3
-    [O46,O23] = F_Cal_O46(startTime,stallLen,O21,O22,O35);
+    [O34_, O35_] = F_Cal_O34O35(O21,O22,qDirChangesTot,qDirChangesLongest); % 8.2 and 8.3
+    [O46_,O23_] = F_Cal_O46(startTime,stallLen,O21,O22,O35_);
+    
+    O46 = double(O46_);
+    O35 = double(O35_); 
+    O34 = double(O34_);
+    O23 = double(O23_);
 end
