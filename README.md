@@ -30,7 +30,7 @@ To obtain the output, you can use the following command.
 
 ## Authors
 
-* **Tran Huyen** - *The University of Aizu, Japan*
+* **Huyen Tran** - *The University of Aizu, Japan*
 
 ## Acknowledgments
 
